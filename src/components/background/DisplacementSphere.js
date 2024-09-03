@@ -27,6 +27,8 @@ import { cleanScene, removeLights, cleanRenderer } from "../../utils/three";
 import "./DisplacementSphere.css";
 import { ThemeContext } from "../theme/ThemeProvider";
 
+import { Color } from "three"; 
+
 const DisplacementSphere = (props) => {
     const { theme } = useContext(ThemeContext);
     const rgbBackground = theme === "light" ? "250 250 250" : "17 17 17";
@@ -83,7 +85,7 @@ const DisplacementSphere = (props) => {
             shader.lights = true;
         };
 
-        geometry.current = new SphereBufferGeometry(32, 128, 128);
+        geometry.current = new SphereBufferGeometry(32, 180, 180);
 
         sphere.current = new Mesh(geometry.current, material.current);
         sphere.current.position.z = 0;
@@ -97,28 +99,26 @@ const DisplacementSphere = (props) => {
     }, []);
 
     useEffect(() => {
-        const dirLight = new DirectionalLight(
-            rgbToThreeColor("250 250 250"),
-            0.6
-        );
-        const ambientLight = new AmbientLight(
-            rgbToThreeColor("250 250 250"),
-            theme === "light" ? 0.8 : 0.1
-        );
 
+        const darkBlueColor = new Color("#9999ff"); 
+
+        const dirLight = new DirectionalLight(darkBlueColor, 0.6);
+
+        const ambientLight = new AmbientLight(darkBlueColor, theme === "light" ? 0.8 : 0.1);
+    
         dirLight.position.z = 200;
         dirLight.position.x = 100;
         dirLight.position.y = 100;
-
+    
         lights.current = [dirLight, ambientLight];
-        scene.current.background = rgbToThreeColor(rgbBackground);
+        scene.current.background = rgbToThreeColor(rgbBackground); 
         lights.current.forEach((light) => scene.current.add(light));
-
+    
         return () => {
             removeLights(lights.current);
         };
     }, [rgbBackground, theme]);
-
+    
     useEffect(() => {
         const handleResize = () => {
             const canvasHeight = innerHeight();

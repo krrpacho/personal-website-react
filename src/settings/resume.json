@@ -1,47 +1,47 @@
 {
     "basics": {
-        "name": "Jo Lienhoop",
-        "label": "Computer Science student",
-        "email": "hey@jolienhoop.com",
+        "name": "krp",
+        "label": "full-stack developer",
+        "email": "krrpacho@gmail.com",
         "phone": "(XXX) XXX-XXXX",
         "picture": "jl.png",
         "x_title": "Hey, I'm",
-        "job": "CS student",
-        "description": "Hey, I'm Jo Lienhoop, a Computer Science student based in Bremen, Germany. I love all things technical. Talk soon!",
-        "summary": "based in Bremen, Germany.",
-        "keywords": "personal,website,portfolio,template,kit,jo,lienhoop,jolienhoop,computer,science,bremen,germany,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp",
-        "url": "https://jolienhoop.com",
+        "job": "full-stack developer",
+        "description": "Hey, I'm krp, full-stack developer. Talk soon!",
+        "summary": "xxx",
+        "keywords": "xxx",
+        "url": "https://github.com/krrpacho",
         "location": {
             "address": "XX XXXXXstreet",
             "postalCode": "XXXXX",
-            "city": "Bremen",
-            "country": "Germany",
-            "countryCode": "DEU",
-            "region": "Bremen"
+            "city": "XXXXX",
+            "country": "XXXXX",
+            "countryCode": "XXXXX",
+            "region": "XXXXX"
         },
         "profiles": [
             {
                 "network": "Google",
-                "username": "hey@jolienhoop.com",
-                "url": "mailto:hey@jolienhoop.com",
+                "username": "krrpacho",
+                "url": "mailto:krrpacho@gmail.com",
                 "x_icon": "fab fa-google"
             },
             {
                 "network": "LinkedIn",
-                "username": "jolienhoop",
-                "url": "https://www.linkedin.com/in/jolienhoop/",
+                "username": "krp",
+                "url": "https://www.linkedin.com/in/krp-rp-7b00b7301/",
                 "x_icon": "fab fa-linkedin-in"
             },
             {
                 "network": "GitHub",
-                "username": "johoop",
-                "url": "https://github.com/JoHoop",
+                "username": "krrpacho",
+                "url": "https://github.com/krrpacho",
                 "x_icon": "fab fa-github"
             },
             {
                 "network": "GitLab",
-                "username": "joli",
-                "url": "https://gitlab.informatik.uni-bremen.de/joli",
+                "username": "XXXXX",
+                "url": "XXXXX",
                 "x_icon": "fab fa-gitlab"
             }
         ]
@@ -105,7 +105,7 @@
     ],
     "languages": [
         {
-            "language": "German",
+            "language": "Russian",
             "fluency": "Native speaker"
         },
         {
